@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms (Most Important for Web Dev)</title>
+</head>
+
+<body>
+    <!-- form  -->
+    <form action="" method="POST">
+        <label for="myname">Enter Name</label>
+        <input type="text" name="myname" id="myname" placeholder="Enter Name" required minlength="1" maxlength="15">
+        <br>
+
+        <label for="email">Enter Email</label>
+        <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+        <br>
+
+        <label for="age">Enter Age</label>
+        <input type="number" name="age" id="age" required min="18" max="30">
+        <br>
+
+        <label for="password">Enter Password</label>
+        <input type="password" name="password" id="password" maxlength="8" required placeholder="*******">
+        <br>
+
+        <label for="skills">Select One Language</label><br>
+        <input type="checkbox" name="skill" id="skills" value="html">HTML
+        <input type="checkbox" name="skill" id="skills" value="css">CSS
+        <input type="checkbox" name="skill" id="skills" value="javascript">JavaScript
+        <input type="checkbox" name="skill" id="skills" value="react">React
+        <br>
+
+        <label for="gender">Select Your Gender</label><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" max="2025-12-30">
+        <br>
+
+        <label for="">Country</label>
+        <select name="" id="">
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+        </select>
+        <br>
+
+        <label for="">Message</label><br>
+        <textarea name="message" id="" cols="30" rows="5" maxlength="50"></textarea>
+        <br>
+
+        <input list="languages" name="language">
+
+        <datalist id="languages">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+        </datalist>
+        <br>
+
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
